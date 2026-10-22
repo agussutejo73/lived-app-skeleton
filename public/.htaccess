@@ -1,0 +1,14 @@
+Options -Indexes
+
+# berkas tersembunyi (.git, .env, dst.) tidak boleh diakses
+<IfModule mod_authz_core.c>
+    <FilesMatch "^\.">
+        Require all denied
+    </FilesMatch>
+</IfModule>
+<IfModule !mod_authz_core.c>
+    <FilesMatch "^\.">
+        Order deny,allow
+        Deny from all
+    </FilesMatch>
+</IfModule>

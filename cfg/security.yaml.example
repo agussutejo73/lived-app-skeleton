@@ -1,0 +1,10 @@
+
+security:
+  password_hashing:
+    algorithm: "argon2id"
+    memory_cost: 75536
+    time_cost: 4
+    threads: 2
+
+  altcha:
+    hmac_secret: "GANTI_DENGAN_STRING_ACAK_MIN_32_KARAKTER"

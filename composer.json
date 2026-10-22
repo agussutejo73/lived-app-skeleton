@@ -1,0 +1,35 @@
+{
+    "name": "lived/app-skeleton",
+    "description": "Kerangka aplikasi baru di atas LIVED Framework",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.2",
+        "ext-mysqli": "*",
+        "lived/framework": "dev-split-framework"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/agussutejo73/LIVED_V2"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "setup": "@php bin/setup.php",
+        "install-db": "@php bin/install-db.php",
+        "publish-assets": "@php vendor/lived/framework/tools/publish-assets.php public",
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "@php -S localhost:8000 -t public"
+        ],
+        "post-create-project-cmd": "@setup",
+        "post-install-cmd": "@publish-assets",
+        "post-update-cmd": "@publish-assets"
+    }
+}

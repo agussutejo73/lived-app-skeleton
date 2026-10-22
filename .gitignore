@@ -1,0 +1,21 @@
+/vendor/
+
+# Aset framework yang dipublikasikan ke public/ (symlink atau salinan; dibuat ulang oleh composer install)
+/public/assets
+/public/themes
+/public/lib
+/public/images
+
+# Konfigurasi dan rahasia lokal (salin dari *.example oleh bin/setup.php)
+/cfg/appl_config.php
+/cfg/security.yaml
+/cfg/mail.php
+/cfg/.link_secret
+
+# Log dan unggahan
+/log/*
+/upload/*
+!/log/.htaccess
+!/log/.gitkeep
+!/upload/.htaccess
+!/upload/.gitkeep

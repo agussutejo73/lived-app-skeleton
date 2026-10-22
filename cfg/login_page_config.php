@@ -1,0 +1,8 @@
+<?php
+$app_name = "__APP_NAME__";
+$app_title = "__APP_TITLE__";
+$copyright = "Nama Institusi";
+
+$logo_pemda = "img/logo.png";
+$nama_pemda = "__APP_TITLE__";
+$nama_pemda_font_size = "24px";

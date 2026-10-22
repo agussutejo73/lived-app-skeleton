@@ -1,0 +1,39 @@
+<?php
+/**
+ * Konfigurasi aplikasi. `bin/setup.php` menyalin berkas ini menjadi cfg/appl_config.php
+ * (diabaikan Git) dan mengisi tanda __...__ . Jangan simpan kredensial produksi di repositori.
+ */
+
+# Koneksi ke database framework
+  $db_type     = "mysqli";
+  $db_host     = "localhost";
+  $db_user     = "root";
+  $db_pswd     = "";
+  $db_appl     = "__DB_NAME__";
+
+# Lokasi
+// Direktori aplikasi (APP_PATH didefinisikan di public/index.php)
+  $base_path = APP_PATH;
+
+// URL untuk mengakses aplikasi (tanpa garis miring di akhir)
+  $web_path = "http://localhost:8000";
+
+  $upload_path = $base_path . "/upload";
+
+# Tampilan
+  $nama_aplikasi            = "__APP_NAME__";
+  $header_application_title = "__APP_TITLE__";
+  $header_title             = "Nama Institusi";
+  $header_subtitle          = "Versi 1.0";
+// Logo kiri; ganti berkas public/img/logo.png dengan logo institusi
+  $header_logo_left         = $web_path . "/img/logo.png";
+  $record_per_page          = 20;
+
+# Wilayah dan penomoran objek
+  $kode_wilayah        = "00";
+  $object_model_pre_id = "00";
+
+# Jasper Report Server (lib/jasper_report/run.bat atau run_jasperserver pada paket framework)
+  $jasper_server_address = "127.0.0.1";
+  $jasper_server_port    = 9999;
+  $jasper_dir            = $base_path . "/modul/";

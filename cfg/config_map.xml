@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<config_map>
+    <item>
+        <tahun>__APP_NAME__</tahun>
+        <title>__APP_NAME__</title>
+        <cfg_file>appl_config.php</cfg_file>
+        <default>1</default>
+    </item>
+</config_map>
