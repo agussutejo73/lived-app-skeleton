@@ -8,7 +8,7 @@ INSERT INTO `appl_themes` (`id_theme`, `theme_name`, `theme_path`, `author`, `pr
 	(3, 'LIVED Office', 'themes/office', 'LIVED', 'themes/office/preview.jpg', 'Thema Perkantoran', '', '0000-00-00 00:00:00', '', '0000-00-00 00:00:00'),
 	(4, 'LIVED Yellow', 'themes/yellow', 'LIVED', 'themes/yellow/preview.jpg', 'Everything yellow', '', '0000-00-00 00:00:00', '', '0000-00-00 00:00:00'),
 	(5, 'LIVED SkyTech', 'themes/skytech', 'LIVED', 'themes/skytech/preview.jpg', 'Thema SkyTech', '', '0000-00-00 00:00:00', '', '0000-00-00 00:00:00'),
-	(7, 'LIVED Car', 'themes/car', 'LIVED', 'themes/car/preview.jpg', 'Thema otomotif: putih gading dan emas champagne', '', '0000-00-00 00:00:00', '', '0000-00-00 00:00:00'),
+	(7, 'LIVED Batik', 'themes/batik', 'LIVED', 'themes/batik/preview.jpg', 'Thema batik Kawung: soga dan emas di atas putih gading', '', '0000-00-00 00:00:00', '', '0000-00-00 00:00:00'),
 	(8, 'LIVED Teknologi', 'themes/teknologi', 'LIVED', 'themes/teknologi/preview.jpg', 'Thema teknologi: biru dengan jalur sirkuit PCB', '', '0000-00-00 00:00:00', '', '0000-00-00 00:00:00');
 
 INSERT INTO `appl_menu` (`id_menu`, `menu_name`, `description`, `created_by`, `creation_date`, `last_updated_by`, `last_updated_date`) VALUES
