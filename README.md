@@ -62,7 +62,7 @@ Server produksi: arahkan document root ke `public/` (Apache/Nginx). Jangan menge
 composer update lived/framework
 ```
 
-Aset di `public/` dipublikasikan ulang otomatis. Di Windows tanpa hak symlink: `composer publish-assets -- --copy`.
+Aset di `public/` dipublikasikan ulang otomatis pada `composer install/update` (`--update`: symlink dibiarkan; salinan diperbarui, tema/aset baru ditambahkan, berkas lain tidak dihapus). Di Windows tanpa hak symlink: `composer publish-assets -- --copy`; ganti total dengan `composer publish-assets -- --copy --force`.
 Commit `composer.lock` supaya semua anggota tim dan server memakai versi yang sama.
 
 ## Versi framework

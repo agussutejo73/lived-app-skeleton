@@ -29,7 +29,7 @@
             "@php -S localhost:8000 -t public"
         ],
         "post-create-project-cmd": "@setup",
-        "post-install-cmd": "@publish-assets",
-        "post-update-cmd": "@publish-assets"
+        "post-install-cmd": "@php vendor/lived/framework/tools/publish-assets.php public --update",
+        "post-update-cmd": "@php vendor/lived/framework/tools/publish-assets.php public --update"
     }
 }
