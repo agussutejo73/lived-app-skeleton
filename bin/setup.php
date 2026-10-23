@@ -26,13 +26,23 @@ $tokens = array(
 function say($msg) { fwrite(STDOUT, $msg . PHP_EOL); }
 
 // 1. berkas konfigurasi lokal
-foreach (array('appl_config.php', 'security.yaml', 'mail.php', 'login_page_config.php') as $f) {
+foreach (array('appl_config.php', 'security.yaml', 'mail.php', 'login_page_config.php', 'secrets.php') as $f) {
     $dst = "$root/cfg/$f";
     $src = "$dst.example";
     if (is_file($dst)) { say("  ada      cfg/$f"); continue; }
     if (!is_file($src)) { say("  lewati   cfg/$f (contoh tidak ditemukan)"); continue; }
     copy($src, $dst);
     say("  dibuat   cfg/$f");
+}
+
+// 1b. kunci enkripsi password modul acak (hanya bila masih nilai contoh)
+$sec = "$root/cfg/secrets.php";
+if (is_file($sec)) {
+    $s = file_get_contents($sec);
+    if (strpos($s, 'GANTI-DENGAN-NILAI-ACAK-MIN-32-KARAKTER') !== false) {
+        file_put_contents($sec, str_replace('GANTI-DENGAN-NILAI-ACAK-MIN-32-KARAKTER', bin2hex(random_bytes(32)), $s));
+        say("  diisi    cfg/secrets.php (modul_key acak)");
+    }
 }
 
 // 2. rahasia HMAC acak (hanya bila masih nilai contoh)

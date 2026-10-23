@@ -10,6 +10,7 @@
 /cfg/appl_config.php
 /cfg/security.yaml
 /cfg/mail.php
+/cfg/secrets.php
 /cfg/login_page_config.php
 /cfg/.link_secret
 
