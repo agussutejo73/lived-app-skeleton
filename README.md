@@ -48,7 +48,7 @@ composer install && php bin/setup.php
 | Jalur | Isi |
 |---|---|
 | `public/` | satu-satunya document root web server; `index.php` + aset (symlink/salinan dari framework, tidak di-commit) |
-| `cfg/` | konfigurasi; `*.example` di-commit, hasil salinan (`appl_config.php`, `security.yaml`, `mail.php`) tidak |
+| `cfg/` | konfigurasi; `*.example` di-commit, hasil salinan (`appl_config.php`, `security.yaml`, `mail.php`, `login_page_config.php`) tidak |
 | `modul/` | kode modul aplikasi (halaman, form, model, laporan `.jasper`) |
 | `database/` | `schema.sql` dan `seed.sql` tabel inti |
 | `log/`, `upload/` | ditulis aplikasi; tertutup untuk web (`.htaccess`) dan tidak di-commit |

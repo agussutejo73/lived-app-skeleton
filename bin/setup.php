@@ -26,7 +26,7 @@ $tokens = array(
 function say($msg) { fwrite(STDOUT, $msg . PHP_EOL); }
 
 // 1. berkas konfigurasi lokal
-foreach (array('appl_config.php', 'security.yaml', 'mail.php') as $f) {
+foreach (array('appl_config.php', 'security.yaml', 'mail.php', 'login_page_config.php') as $f) {
     $dst = "$root/cfg/$f";
     $src = "$dst.example";
     if (is_file($dst)) { say("  ada      cfg/$f"); continue; }

@@ -167,13 +167,15 @@ CREATE TABLE IF NOT EXISTS `appl_user` (
   `creation_date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `last_updated_by` varchar(20) DEFAULT NULL,
   `last_updated_date` datetime DEFAULT '0000-00-00 00:00:00',
+  `last_login` datetime DEFAULT NULL,
+  `last_password_changed` datetime DEFAULT NULL,
   PRIMARY KEY (`login_name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE IF NOT EXISTS `appl_user_log` (
   `login_name` varchar(30) NOT NULL,
   `session_id` varchar(200) NOT NULL DEFAULT '',
-  `ip_client` varchar(15) DEFAULT NULL,
+  `ip_client` varchar(45) DEFAULT NULL,
   `login_error` varchar(20) DEFAULT NULL,
   `login_time` datetime DEFAULT NULL,
   `logout_time` datetime DEFAULT NULL,
