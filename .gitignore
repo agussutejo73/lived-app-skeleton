@@ -17,6 +17,8 @@
 # Log dan unggahan
 /log/*
 /upload/*
+/tmp/*
+!/tmp/.gitkeep
 !/log/.htaccess
 !/log/.gitkeep
 !/upload/.htaccess

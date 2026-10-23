@@ -47,7 +47,7 @@ composer install && php bin/setup.php
 
 | Jalur | Isi |
 |---|---|
-| `public/` | satu-satunya document root web server; `index.php` + aset (symlink/salinan dari framework, tidak di-commit) |
+| `public/` | satu-satunya document root web server; `index.php` + aset (symlink/salinan dari framework, tidak di-commit). `public/branding/` milik aplikasi (di-commit): logo institusi/pengembang, dan `logo.gif`/`logo_pemda.gif` untuk laporan Jasper (menimpa gambar bawaan `images/`) |
 | `cfg/` | konfigurasi; `*.example` di-commit, hasil salinan (`appl_config.php`, `security.yaml`, `mail.php`, `login_page_config.php`) tidak |
 | `modul/` | kode modul aplikasi (halaman, form, model, laporan `.jasper`) |
 | `database/` | `schema.sql` dan `seed.sql` tabel inti |

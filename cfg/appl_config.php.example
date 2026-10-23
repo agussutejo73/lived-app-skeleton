@@ -25,10 +25,10 @@
   $header_application_title = "__APP_TITLE__";
   $header_title             = "Nama Institusi";
   $header_subtitle          = "Versi 1.0";
-// Logo kiri; ganti berkas public/img/logo.png dengan logo institusi
-  $header_logo_left         = $web_path . "/img/logo.png";
+// Logo kiri; ganti berkas public/branding/logo.png dengan logo institusi
+  $header_logo_left         = $web_path . "/branding/logo.png";
 // Logo kanan (opsional, mis. logo pengembang aplikasi); hapus tanda komentar untuk menampilkan
-//$header_logo_right        = $web_path . "/img/logo_pengembang.png";
+//$header_logo_right        = $web_path . "/branding/logo_pengembang.png";
 //$header_company_name      = "Nama Pengembang";
   $record_per_page          = 20;
 

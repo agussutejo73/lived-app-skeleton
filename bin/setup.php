@@ -65,7 +65,7 @@ foreach (array('cfg/appl_config.php', 'cfg/config_map.xml', 'cfg/login_page_conf
 }
 
 // 4. direktori kerja
-foreach (array('log', 'upload', 'modul') as $d) {
+foreach (array('log', 'upload', 'modul', 'tmp') as $d) {
     if (!is_dir("$root/$d") && mkdir("$root/$d", 0775, true)) say("  dibuat   $d/");
 }
 
