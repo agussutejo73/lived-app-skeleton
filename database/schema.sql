@@ -169,6 +169,7 @@ CREATE TABLE IF NOT EXISTS `appl_user` (
   `last_updated_date` datetime DEFAULT '0000-00-00 00:00:00',
   `last_login` datetime DEFAULT NULL,
   `last_password_changed` datetime DEFAULT NULL,
+  `avatar` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`login_name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
